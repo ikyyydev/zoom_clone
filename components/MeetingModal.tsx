@@ -49,7 +49,7 @@ const MeetingModal = ({
           </h1>
           {children}
           <Button
-            className="bg-blue-500 focus-visible:ring-0 focus-visible:ring-offset-0 hover:bg-blue-500/90"
+            className="bg-primary focus-visible:ring-0 focus-visible:ring-offset-0 hover:bg-primary-hover"
             onClick={handleClick}
           >
             {buttonIcon && (

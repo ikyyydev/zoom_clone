@@ -19,6 +19,10 @@ const config = {
     },
     extend: {
       colors: {
+        primary: {
+          DEFAULT: "#7400b8",
+          hover: "#6A00A7",
+        },
         dark: {
           1: "#1c1f2e",
           2: "#161925",
@@ -42,15 +46,20 @@ const config = {
         yellow: {
           1: "#F9A90E",
         },
+        success: {
+          DEFAULT: "#00c851",
+          hover: "#00B348",
+        },
+        error: {
+          DEFAULT: "#b80600",
+          hover: "#A90600",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
+
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

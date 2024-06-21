@@ -60,7 +60,7 @@ const MeetingCard = ({
           <div className="flex gap-2">
             <Button
               onClick={handleClick}
-              className="rounded bg-blue-600 px-6 hover:bg-blue-600/90"
+              className="rounded bg-primary px-6 hover:bg-primary-hover"
             >
               {buttonIcon1 && (
                 <Image src={buttonIcon1} alt="Feature" width={20} height={20} />
@@ -70,9 +70,13 @@ const MeetingCard = ({
             <Button
               onClick={() => {
                 navigator.clipboard.writeText(link);
-                toast({ title: "Link Copied" });
+                toast({
+                  title: "Link Copied",
+                  duration: 2000,
+                  className: "bg-success border-none text-white",
+                });
               }}
-              className="bg-dark-4 px-6"
+              className="bg-dark-4 px-6 opacity-100 hover:bg-dark-4 hover:opacity-90"
             >
               <Image
                 src="/icons/copy.svg"

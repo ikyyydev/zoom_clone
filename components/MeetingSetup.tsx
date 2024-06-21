@@ -42,12 +42,12 @@ const MeetingSetup = ({
             checked={isMicCamToggledOn}
             onChange={(e) => setIsMicCamToggledOn(e.target.checked)}
           />
-          Join with mic and camera off
+          Join without mic and camera
         </label>
         <DeviceSettings />
       </div>
       <Button
-        className="rounded-md bg-blue-600 hover:bg-blue-600/90 px-4 py-2.5"
+        className="rounded-md bg-primary hover:bg-primary-hover px-4 py-2.5"
         onClick={() => {
           call.join();
 

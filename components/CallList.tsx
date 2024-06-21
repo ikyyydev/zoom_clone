@@ -60,6 +60,8 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
       } catch (error) {
         toast({
           title: "Try Again Later",
+          duration: 2000,
+          className: "bg-error border-none text-white",
         });
       }
     };

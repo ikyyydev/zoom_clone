@@ -51,7 +51,7 @@ const PersonalRoom = () => {
     toast({
       title: "Start Meeting...",
       duration: 2000,
-      className: "bg-green-600 border-none text-white",
+      className: "bg-success border-none text-white",
     });
     setTimeout(() => {
       router.push(`/meeting/${meetingId}?personal=true`);
@@ -70,16 +70,20 @@ const PersonalRoom = () => {
 
       <div className="flex gap-5">
         <Button
-          className="bg-blue-600 hover:bg-blue-600/90"
+          className="bg-primary hover:bg-primary-hover"
           onClick={startRoom}
         >
           Start Meeting
         </Button>
         <Button
-          className="bg-dark-1"
+          className="bg-dark-4 px-6 opacity-100 hover:bg-dark-4 hover:opacity-90"
           onClick={() => {
             navigator.clipboard.writeText(meetingLink);
-            toast({ title: "Link Copied" });
+            toast({
+              title: "Link Copied",
+              duration: 2000,
+              className: "bg-success border-none text-white",
+            });
           }}
         >
           Copy Invitation

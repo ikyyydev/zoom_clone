@@ -34,6 +34,8 @@ const MeetingTypeList = () => {
       if (!values.dateTime) {
         toast({
           title: "Please Select a date and time",
+          duration: 2000,
+          className: "bg-error border-none text-white",
         });
         return;
       }
@@ -64,10 +66,14 @@ const MeetingTypeList = () => {
 
       toast({
         title: "Meeting Created",
+        duration: 1000,
+        className: "bg-success border-none text-white",
       });
     } catch (error) {
       toast({
         title: "Failed to create meeting",
+        duration: 2000,
+        className: "bg-error border-none text-white",
       });
     }
   };
@@ -86,21 +92,21 @@ const MeetingTypeList = () => {
         title="Schedule Meeting"
         description="Plan your meeting"
         handleClick={() => setMeetingState("isScheduleMeeting")}
-        className="bg-blue-1"
+        className="bg-primary"
       />
       <HomeCard
         img="/icons/recordings.svg"
         title="View Recordings"
         description="Checkout your recording"
         handleClick={() => router.push("/recordings")}
-        className="bg-purple-1"
+        className="bg-primary"
       />
       <HomeCard
         img="/icons/join-meeting.svg"
         title="Join Meeting"
         description="Via Invitation link"
         handleClick={() => setMeetingState("isJoiningMeeting")}
-        className="bg-yellow-1"
+        className="bg-primary"
       />
 
       {!callDetails ? (

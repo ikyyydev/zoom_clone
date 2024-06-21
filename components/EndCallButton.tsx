@@ -26,7 +26,7 @@ const EndCallButton = () => {
       }}
       className="bg-red-500 hover:bg-red-500/90"
     >
-      End call for everyone
+      End for All
     </Button>
   );
 };
