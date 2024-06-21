@@ -6,6 +6,7 @@ const Home = () => {
   const time = now.toLocaleTimeString("id-ID", {
     hour: "2-digit",
     minute: "2-digit",
+    timeZone: "Asia/Jakarta",
   });
   const date = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
     now
