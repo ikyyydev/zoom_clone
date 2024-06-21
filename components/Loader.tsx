@@ -4,12 +4,19 @@ import React from "react";
 const Loader = () => {
   return (
     <div className="flex justify-center items-center h-screen w-full ">
-      <Image
+      {/* <Image
         src={"/icons/loading-circle.svg"}
         alt="Loading"
         width={50}
         height={50}
-      />
+      /> */}
+      <div className="dots-container">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
     </div>
   );
 };
